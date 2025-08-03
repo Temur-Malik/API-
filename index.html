@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>API Homework</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>API</h1>
+    
+    <div class="filter-section">
+      <input type="text" id="name" placeholder="Name" />
+      <input type="text" id="surname" placeholder="Surname" />
+      <input type="number" id="age" placeholder="Age" />
+      <input type="text" id="country" placeholder="Country" />
+      <input type="date" id="birthdate" />
+      <button id="addBtn">+ Add</button>
+    </div>
+
+    <div class="event-section">
+      <h2>Event List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Country</th>
+            <th>Birth Date</th>
+          </tr>
+        </thead>
+        <tbody id="eventTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
