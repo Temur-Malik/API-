@@ -3,41 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>API Homework</title>
-  <link rel="stylesheet" href="style.css">
+  <title>User Management</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>API</h1>
-    
-    <div class="filter-section">
-      <input type="text" id="name" placeholder="Name" />
-      <input type="text" id="surname" placeholder="Surname" />
-      <input type="number" id="age" placeholder="Age" />
-      <input type="text" id="country" placeholder="Country" />
-      <input type="date" id="birthdate" />
-      <button id="addBtn">+ Add</button>
-    </div>
+    <h1>User Management</h1>
 
-    <div class="event-section">
-      <h2>Event List</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Age</th>
-            <th>Country</th>
-            <th>Birth Date</th>
-          </tr>
-        </thead>
-        <tbody id="eventTableBody"></tbody>
-      </table>
-    </div>
+    <form id="userForm" class="user-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="surname" placeholder="Surname" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="text" id="country" placeholder="Country" required />
+      <input type="date" id="birthdate" placeholder="Birthdate" required />
+      <button type="button" id="addBtn">Add User</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Age</th>
+          <th>Country</th>
+          <th>Birthdate</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="eventTableBody"></tbody>
+    </table>
   </div>
 
   <script src="index.js"></script>
 </body>
 </html>
-
-

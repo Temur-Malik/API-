@@ -1,84 +1,86 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-  background-color: whitesmoke;
-  padding: 20px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
 }
 
 .container {
   max-width: 900px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 30px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1 {
   text-align: center;
-  color: dimgray;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #333;
 }
 
-.filter-section {
+.user-form {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 30px;
-  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.filter-section input,
-.filter-section button {
+.user-form input {
+  flex: 1 1 30%;
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid lightgray;
+  border: 1px solid #ccc;
   border-radius: 6px;
+  font-size: 16px;
 }
 
-.filter-section input:focus {
-  outline: none;
-  border-color: dodgerblue;
-}
-
-#addBtn {
+.user-form button {
+  flex: 1 1 100%;
+  padding: 12px;
   background-color: dodgerblue;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  color: #fff;
   border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-#addBtn:hover {
-  background-color: royalblue;
-}
-
-.event-section {
-  overflow-x: auto;
+.user-form button:hover {
+  background-color: #1e90ff;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
 }
 
 th, td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid lightgray;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  text-align: center;
 }
 
 th {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #f0f0f0;
 }
 
-tr:hover {
-  background-color: gainsboro;
+.action-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
+.edit-btn {
+  background-color: #ffc107;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
